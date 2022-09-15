@@ -11,6 +11,7 @@ let total = 0;
 for (const key in votes) {
   total += votes[key]
 }
+
 export default function VotosIndividuales() {
 
     return (
