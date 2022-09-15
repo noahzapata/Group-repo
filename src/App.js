@@ -9,19 +9,22 @@ import VotosIndividuales from './components/VotosIndividuales';
 function App() {
   return (
     <>
-    <div className='title'>
-      <h1>Ejerce tu derecho al voto</h1>
-    </div>
-    <CandidatosProvider >
-      <div className="App">
-        <ListaCandidatos/>
-        <div className='main'>
-        <Filtro/>
-        <TotalVotos/>
-        <VotosIndividuales/>
-        </div>
+      <div className='title'>
+        <h1>Ejerce tu derecho al voto</h1>
       </div>
-    </CandidatosProvider>
+      <CandidatosProvider >
+        <div className="App">
+          <ListaCandidatos />
+          <div className='main'>
+            <Filtro />
+            <div className="second-main">
+              <TotalVotos />
+              <VotosIndividuales />
+            </div>
+
+          </div>
+        </div>
+      </CandidatosProvider>
     </>
   );
 }
